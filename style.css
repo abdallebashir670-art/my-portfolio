@@ -13,6 +13,8 @@ body {
     border-radius: 12px;
     text-align: center;
     width: 250px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 1s;
 }
 .card img {
     width: 120px;
@@ -27,6 +29,9 @@ body {
 .card p {
     margin: 0 0 15px;
     color: gray;
+}
+.card:hover {
+    transform: translateY(-10px);
 }
 button {
     margin-bottom: 10px;
@@ -49,4 +54,15 @@ ul {
 
 li {
     margin: 5px 0;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
 }
